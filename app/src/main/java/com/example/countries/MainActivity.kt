@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         getCountries()
     }
 
+    //call countries api and display the data
     private fun getCountries() {
         showProgress()
         viewModel.getCountries()
@@ -42,10 +43,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //show progress bar
     private fun showProgress() {
         binding.progressBar.visibility = View.VISIBLE
     }
 
+    //hide progress bar
     private fun hideProgress() {
         binding.progressBar.visibility = View.GONE
     }
